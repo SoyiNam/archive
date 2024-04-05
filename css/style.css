@@ -8,7 +8,11 @@
   --color-text: var(--color-white);
 
   /* Background */
-  --home-bg-gradient: linear-gradient(180deg, rgba(20, 50, 103, 1) 0%, rgba(5, 10, 19, 1) 100%);
+  --home-bg-gradient: linear-gradient(
+    180deg,
+    rgba(20, 50, 103, 1) 0%,
+    rgba(5, 10, 19, 1) 100%
+  );
 
   /* Colors */
   --color-white: #ffffff;
@@ -17,7 +21,7 @@
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
   /* --color-deap_blue: #3995DB; */
-  --color-yellow: #FAC746;
+  --color-yellow: #fac746;
 
   /* Size */
   --size-max-width: 1200px;
@@ -30,7 +34,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -214,7 +217,7 @@ button:focus {
 }
 
 .home_divider .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /* About */
@@ -354,7 +357,7 @@ button:focus {
 }
 
 .skills_divider .shape-fill {
-  fill: var(--color-primary)
+  fill: var(--color-primary);
 }
 
 /* Work */
@@ -464,7 +467,7 @@ button:focus {
 }
 
 .project__title:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   left: 50%;
@@ -495,6 +498,19 @@ button:focus {
   border-radius: 50%;
 }
 
+.stack3 {
+  object-fit: contain;
+
+  position: absolute;
+  top: 6rem;
+  right: 0.5rem;
+  display: inline-block;
+  background-color: white;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
 .responsive {
   position: absolute;
   background-color: var(--color-blue);
@@ -505,7 +521,6 @@ button:focus {
   padding: 0.5rem;
   border-radius: 18px;
   font-size: 0.8rem;
-
 }
 
 /* Testimonial */
@@ -606,7 +621,7 @@ button:focus {
 }
 
 .footer_divider .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -702,7 +717,4 @@ button:focus {
     bottom: 1.5rem;
     right: 1.5rem;
   }
-
-
-
 }
