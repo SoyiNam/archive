@@ -1,0 +1,97 @@
+/* Global */
+:root {
+  /* App Colors */
+  --color-primary: var(--color-beige);
+  --color-primary-variant: var(--color-gray);
+  --color-accent: var(--color-purple);
+  --color-accent-variant: var(--color-orange);
+  --color-text: var(--color-black);
+
+  /* Background */
+  --home-bg-gradient: linear-gradient(
+    180deg,
+    rgba(20, 50, 103, 1) 0%,
+    rgba(5, 10, 19, 1) 100%
+  );
+
+  /* Colors */
+  --color-black: #0b0e19;
+  --color-beige: #f5f5f5;
+  --color-purple: #884bf1;
+  --color-orange: #fd6413;
+  --color-gray: #1b1e26;
+  --color-yellow: #fac746;
+
+  /* Size */
+  --size-max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans KR", "Nunito Sans", sans-serif;
+
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+button {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 1px solid transparent;
+}
+
+/* Common */
+.section {
+  display: flex;
+  padding: 4rem;
+  border-bottom: 0.1rem solid var(--color-primary);
+}
+
+.section_left {
+  width: 700px;
+}
+
+.max-container {
+  max-width: var(--size-max-width);
+  /* margin: auto; */
+}
+
+.title {
+  font-family: "Nunito Sans", "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
