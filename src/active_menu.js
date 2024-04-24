@@ -45,7 +45,7 @@ function observerCallback(entries) {
   const navIndex = selectLastOne
     ? sectionIds.length - 1
     : findFirstIntersecting(visibleSections);
-  console.log(sectionIds[navIndex]);
+  // console.log(sectionIds[navIndex]);
 
   selectNavItem(navIndex);
 }

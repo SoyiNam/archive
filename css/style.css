@@ -99,6 +99,7 @@
 
 /* About */
 .majors {
+  width: 64%;
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
@@ -235,6 +236,7 @@
 }
 
 .projects {
+  width: 64%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -348,11 +350,6 @@
 }
 
 /* Testimonial */
-
-.testimonials {
-  margin: 3rem;
-}
-
 .testimonial {
   display: flex;
   gap: 2rem;
