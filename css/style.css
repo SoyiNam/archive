@@ -99,7 +99,6 @@
 
 /* About */
 .majors {
-  width: 64%;
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
@@ -109,7 +108,7 @@
 }
 
 .major {
-  width: 25rem;
+  width: 21rem;
   padding: 2rem 1rem;
   background-color: var(--color-primary-variant);
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
@@ -139,7 +138,6 @@
 }
 
 .skills {
-  width: 64%;
   display: grid;
   grid-template-columns: 6fr 4fr;
   border-radius: 8px;
@@ -236,7 +234,6 @@
 }
 
 .projects {
-  width: 64%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -354,7 +351,6 @@
   display: flex;
   gap: 2rem;
   align-items: center;
-  justify-content: center;
   margin-bottom: 2rem;
 }
 

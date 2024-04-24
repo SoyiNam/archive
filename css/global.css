@@ -71,13 +71,12 @@ button:focus {
 
 /* Common */
 .section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 1rem;
   padding: 4rem;
+  box-sizing: border-box;
   border-bottom: 0.1rem solid var(--color-primary);
-}
-
-.section_left {
-  width: 700px;
 }
 
 .max-container {
