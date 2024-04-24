@@ -33,13 +33,12 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header english">
     <div class="header__logo">
-      <h1 class="header__logo__title"><a href="#">프론트엔드 &#124; 남소이</a></h1>
+      <h1 class="header__logo__title"><a href="#">FE &#124; 남소이</a></h1>
     </div>
-
     <nav class="header__nav">
-      <ul class="header__menu">
+      <ul class="header__menu ">
         <li><a class="header__menu__item active" href="#home">Home</a></li>
         <li><a class="header__menu__item" href="#about">About</a></li>
         <li><a class="header__menu__item" href="#skills">Skills</a></li>
@@ -48,7 +47,6 @@
         <li><a class="header__menu__item" href="#contact">Contact</a></li>
       </ul>
     </nav>
-
     <button class="header__toggle" aria-label="navigation menu toggle">
       <i class="fa-solid fa-bars"></i>
     </button>
@@ -62,20 +60,21 @@
         <img class="home__avatar" src="./images/me/01.png" alt="남소이" />
         <h2 class="home__title">
           안녕하세요.<br />
-          <strong class="home__title--strong"> 프론트엔드 </strong>개발자, 남소이입니다🙂
+          <strong class="home__title--strong">프론트엔드 </strong>개발자, 남소이입니다🙂
         </h2>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section english">
       <div class="section_left">
         <h2 class="title">About me</h2>
         <p class="description">
-          세심하고 예민한 관찰력으로 세상을 탐구하며, 사용자의 필요를 캐치하여 더 나은 경험을 제공할 수 있습니다.
+          With sensitive observational skills,<br />
+          capturing the needs of users to provide a better experience
         </p>
       </div>
-      <ul class="majors">
+      <ul class="majors english">
         <li class="major">
           <i class="fa-brands fa-html5 major__icon"></i>
           <p class="major__title">Front-end</p>
@@ -95,7 +94,7 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section">
+    <section id="skills" class="section english">
       <div class="section_left">
         <h2 class="title">My Skills</h2>
       </div>
@@ -105,10 +104,10 @@
           <ul>
             <li class="bar">
               <div class="bar__metadata">
-                <span>HTML</span><span>98%</span>
+                <span>HTML</span><span>90%</span>
               </div>
               <div class="bar__bg">
-                <div class="bar__value" style="width: 98%"></div>
+                <div class="bar__value" style="width: 90%"></div>
               </div>
             </li>
             <li class="bar">
@@ -121,10 +120,10 @@
             </li>
             <li class="bar">
               <div class="bar__metadata">
-                <span>React</span><span>70%</span>
+                <span>React</span><span>75%</span>
               </div>
               <div class="bar__bg">
-                <div class="bar__value" style="width: 70%"></div>
+                <div class="bar__value" style="width: 75%"></div>
               </div>
             </li>
             <li class="bar">
@@ -162,150 +161,142 @@
     </section>
 
     <!-- Work -->
-    <section id="work" class="section">
+    <section id="work" class="section english">
       <div class="section_left">
-        <h2 class="title">My work & Study</h2>
-        <p class="description">Projects</p>
+        <h2 class="title">My work</h2>
+        <p class="description">Some of my recent works</p>
         <ul class="categories">
           <li>
             <button class="category category--selected" data-category="all">
-              All
-              <span class="category__count">10</span>
+              All<span class="category__count">9</span>
             </button>
           </li>
           <li>
             <button class="category" data-category="HTML/CSS">
-              HTML/CSS <span class="category__count">5</span>
-            </button>
-          </li>
-          <li>
-            <button class="category" data-category="React">
-              REACT <span class="category__count">3</span>
+              HTML/CSS<span class="category__count">5</span>
             </button>
           </li>
           <li>
             <button class="category" data-category="Vue">
-              Vue.JS <span class="category__count">1</span>
+              Vue.JS<span class="category__count">1</span>
             </button>
           </li>
           <li>
-            <button class="category" data-category="study">
-              Study<span class="category__count">1</span>
+            <button class="category" data-category="React">
+              REACT<span class="category__count">3</span>
             </button>
           </li>
         </ul>
       </div>
-
       <ul class="projects">
         <li class="project" data-type="React">
-          <img src="images/ico/React.png" alt="react project" class="stack" />
-          <img src="images/ico/Tailwindui.png" alt="" class="stack2" />
-          <img src="images/ico/react-router.png" alt="" class="stack3" />
+          <div class="projects__config">
+            <img src="images/ico/React.png" alt="" />
+            <img src="images/ico/react-router.png" alt="" />
+            <img src=" images/ico/Tailwindui.png" alt="" />
+            <img src=" images/ico/FIREBASE.png" alt="" />
+          </div>
           <a href="https://soyi-mall.netlify.app/" target="_blank">
-            <img src="images/projects/project10.png" alt="project4" class="project__img" />
+            <img src="images/projects/proj_10.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #1</h3>
-              <p>React Project - shopping mall</p>
+              <p>Shopping Mall</p>
             </div>
           </a>
         </li>
         <li class="project" data-type="React">
-          <img src="images/ico/React.png" alt="react project" class="stack" />
-          <img src="images/ico/Tailwindui.png" alt="" class="stack2" />
-          <img src="images/ico/react-router.png" alt="" class="stack3" />
+          <div class="projects__config">
+            <img src="images/ico/React.png" alt="" />
+            <img src="images/ico/react-router.png" alt="" />
+            <img src=" images/ico/Tailwindui.png" alt="" />
+          </div>
+          <p class="projects__config_responsive">Responsive</p>
           <a href="https://main--darling-valkyrie-4cd438.netlify.app/" target="_blank">
-            <img src="images/projects/project9.png" alt="project4" class="project__img" />
+            <img src="images/projects/proj_09.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #2</h3>
-              <p>React Project - Soyitube</p>
+              <p>soyitube</p>
             </div>
           </a>
         </li>
         <li class="project" data-type="React">
-          <img src="images/ico/React.png" alt="react project" class="stack" />
-          <img src="images/ico/Tailwindui.png" alt="" class="stack2">
-          <img src="images/ico/react-router.png" alt="" class="stack3" />
-
+          <div class="projects__config">
+            <img src="images/ico/React.png" alt="" />
+            <img src="images/ico/react-router.png" alt="" />
+            <img src=" images/ico/Tailwindui.png" alt="" />
+          </div>
           <a href="https://soyinam.github.io/soyify/" target="_blank">
-            <img src="images/projects/project7.png" alt="project1" class="project__img" />
+            <img src="images/projects/proj_07.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #3</h3>
-              <p>React Project - Spotify</p>
+              <p>Spotify</p>
             </div>
           </a>
         </li>
         <li class="project" data-type="Vue">
-
-          <img src="images/ico/VUE.png" alt="react project" class="stack" />
-          <img src="images/ico/FIREBASE.png" alt="" class="stack2">
-          <p class="responsive">Responsive</p>
-
+          <div class="projects__config">
+            <img src="images/ico/VUE.png" alt="" />
+            <img src=" images/ico/FIREBASE.png" alt="" />
+          </div>
+          <p class="projects__config_responsive">Responsive</p>
           <a href="https://rotten-tomatoes-ad800.web.app/" target="_blank">
-            <img src="images/projects/project1.png" alt="project1" class="project__img" />
+            <img src="images/projects/proj_01.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #4</h3>
-              <p>Vue Project - FlimFlight</p>
-              <a href="https://soyinam.github.io/PDF_Filmflight/기획서.pdf" class="temp">기획서</a>
+              <p>필름플라이트(FlimFlight)</p>
             </div>
           </a>
+          <!-- <a href="https://soyinam.github.io/PDF_Filmflight/기획서.pdf" target="_blank" class="develop_doc">기획서</a> -->
         </li>
         <li class="project" data-type="HTML/CSS">
-          <img src="images/ico/JAVASCRIPT.png" alt="react project" class="stack" />
+          <div class="projects__config">
+            <img src="images/ico/JAVASCRIPT.png" alt="" />
+          </div>
           <a href="https://soyi-talk.web.app/" target="_blank">
-            <img src="images/projects/project2.png" alt="project2" class="project__img" />
+            <img src="images/projects/proj_02.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #5</h3>
-              <p>HTML, CSS, JS - 오뚜기(Ottogi)</p>
+              <p>오뚜기(Ottogi)</p>
             </div>
           </a>
         </li>
         <li class="project" data-type="HTML/CSS">
-          <img src="images/ico/JAVASCRIPT.png" alt="react project" class="stack" />
-
+          <div class="projects__config">
+            <img src="images/ico/JAVASCRIPT.png" alt="" />
+          </div>
           <a href="https://soyinam.github.io/NETCGVFLIX/#none" target="_blank">
-            <img src="images/projects/project5.png" alt="project3" class="project__img" />
+            <img src="images/projects/proj_05.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #6</h3>
-              <p>HTML, CSS, JS - Netflix</p>
+              <p>넷플릭스(Netflix)</p>
             </div>
           </a>
         </li>
         <li class="project" data-type="HTML/CSS">
-          <p class="responsive">Responsive</p>
-
+          <p class="projects__config_responsive">Responsive</p>
           <a href="https://soyinam.github.io/company-corporate/" target="_blank">
-            <img src="images/projects/project6.png" alt="project3" class="project__img" />
+            <img src="images/projects/proj_06.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #7</h3>
-              <p>HTML, CSS, JS - Company Introduce</p>
+              <p>Company Introduce</p>
             </div>
           </a>
         </li>
         <li class="project" data-type="HTML/CSS">
           <a href="https://soyinam.github.io/Hanjin/" target="_blank">
-            <img src="images/projects/project3.png" alt="project3" class="project__img" />
+            <img src="images/projects/proj_03.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #8</h3>
-              <p>HTML, CSS - Hanjin</p>
+              <p>한진(Hanjin)</p>
             </div>
           </a>
         </li>
         <li class="project" data-type="HTML/CSS">
           <a href="https://soyinam.github.io/Oliveyoung/" target="_blank">
-            <img src="images/projects/project4.png" alt="project4" class="project__img" />
+            <img src="images/projects/proj_04.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #9</h3>
-              <p>HTML, CSS - Oliveyoung</p>
-            </div>
-          </a>
-        </li>
-        <li class="project" data-type="study">
-          <a href="https://enchanted-piper-9f9.notion.site/FE-Note-fd6e6d811d874108b5fb111f71cc9e3a?pvs=4"
-            target="_blank">
-            <img src="images/projects/project8.png" alt="project4" class="project__img" />
-            <div class="project__metadata">
-              <h3 class="project__title">Notion Link</h3>
-              <p>Notion Link</p>
+              <p>올리브영(Oliveyoung)</p>
             </div>
           </a>
         </li>
@@ -313,40 +304,27 @@
     </section>
 
     <!-- Experience -->
-    <section id="testimonial" class="section">
+    <section id="testimonial" class="section english">
       <div class="section_left">
         <h2 class="title">Experience</h2>
-        <p class="description">
-          where i've worked
-        </p>
+        <p class="description">where i've worked</p>
       </div>
       <ul class="testimonials">
         <li class="testimonial">
-          <img src="images/testimonials/experience1.png" alt="people1" class="testimonial__img" />
+          <img src="images/experience/01.png" alt="experience01" class="testimonial__img" />
           <div class="testimonial__bubble">
-            <p>
-              다양한 콘텐츠 제작, 외부 제작자 모집 및 관리, 제작자 스튜디오 교육 실행, 콘텐츠 제작 및 기획
-            </p>
-            <p>
-              <a href="#" class="testimonial__bubble__name">content PM</a>
-              / thingsflow
-            </p>
+            <p>다양한 콘텐츠 제작, 외부 제작자 모집 및 관리, 제작자 스튜디오 교육 실행, 콘텐츠 제작 및 기획</p>
+            <p><span class="testimonial__bubble__name">content PM</span>/ thingsflow</p>
           </div>
         </li>
         <li class="testimonial">
-          <img src="images/testimonials/experience2.webp" alt="people2" class="testimonial__img" />
+          <img src="images/experience/02.webp" alt="experience02" class="testimonial__img" />
           <div class="testimonial__bubble">
-            <p>
-              리스크 재발 방지를 위한 파트너향 콘텐츠 기획, 신규 프로세스 및 시스템 시행 시 파트너향 가이드 기획, 내부 기준에 맞게 제품 광고할 수 있도록 파트너향 가이드 기획, 서비스 상시
-              모니터링를 통한 리스크 식별 후 조처, 잠재 리스크 예방을 위한 신규 프로세스 및 시스템 기획, 신고 서비스 운영 및 기능 개선 활동, 파트너 스튜디오 기능 개선 TF
-            </p>
-            <p>
-              <a href="#" class="testimonial__bubble__name">Risk Manager</a>
-              / wadiz
-            </p>
+            <p>리스크 재발 방지를 위한 파트너향 콘텐츠 기획, 신규 프로세스 및 시스템 시행 시 파트너향 가이드 기획, 내부 기준에 맞게 제품 광고할 수 있도록 파트너향 가이드 기획, 서비스 상시
+              모니터링를 통한 리스크 식별 후 조처, 잠재 리스크 예방을 위한 신규 프로세스 및 시스템 기획, 신고 서비스 운영 및 기능 개선 활동, 파트너 스튜디오 기능 개선 TF</p>
+            <p><span class="testimonial__bubble__name">Risk Manager</span>/ wadiz</p>
           </div>
         </li>
-
       </ul>
     </section>
 
@@ -360,7 +338,7 @@
   </main>
 
   <!-- Footer -->
-  <footer id="contact" class="section">
+  <footer id="contact" class="section english">
     <div class="max-container">
       <h2 class="title">Contact</h2>
       <p class="description">frontsoyi@gmail.com</p>
