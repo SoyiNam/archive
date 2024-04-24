@@ -108,7 +108,7 @@
 }
 
 .major {
-  width: 21rem;
+  width: 30%;
   padding: 2rem 1rem;
   background-color: var(--color-primary-variant);
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
