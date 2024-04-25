@@ -234,7 +234,7 @@
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
   transition: all 250ms ease-out;
 }
@@ -253,9 +253,11 @@
 }
 
 .project__img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border: 0.1rem solid var(--color-primary);
 }
 
 .project__metadata {
@@ -304,6 +306,8 @@
   padding: 0.5rem;
   border-radius: 18px;
   font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
   color: var(--color-primary);
   background-color: var(--color-accent);
   position: absolute;
@@ -399,6 +403,8 @@
 }
 
 .contact__link {
+  width: 48px;
+  border-radius: 50%;
   transition: color 250ms ease-in;
 }
 
@@ -406,7 +412,7 @@
   color: var(--color-accent);
 }
 
-@media screen and (max-width: 768px) {
+contact__img @media screen and (max-width: 768px) {
   .section {
     padding: 4rem 2rem;
   }
