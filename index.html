@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>포트폴리오 &#124; 프론트엔드 남소이</title>
+  <title>포트폴리오 아카이브 &#124; 프론트엔드 남소이</title>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
   <!-- Google Fonts -->
@@ -29,6 +29,12 @@
   <script type="module" src="./src/main.js" defer></script>
   <script type="module" src="./src/projects.js" defer></script>
   <script type="module" src="./src/active_menu.js" defer></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+
 </head>
 
 <body>
@@ -39,12 +45,7 @@
     </div>
     <nav class="header__nav">
       <ul class="header__menu ">
-        <li><a class="header__menu__item active" href="#home">Home</a></li>
-        <li><a class="header__menu__item" href="#about">About</a></li>
-        <li><a class="header__menu__item" href="#skills">Skills</a></li>
         <li><a class="header__menu__item" href="#work">My work</a></li>
-        <li><a class="header__menu__item" href="#testimonial">Experience</a></li>
-        <li><a class="header__menu__item" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <button class="header__toggle" aria-label="navigation menu toggle">
@@ -60,119 +61,15 @@
         <img class="home__avatar" src="./images/me/01.png" alt="남소이" />
         <h2 class="home__title">
           안녕하세요.<br />
-          <strong class="home__title--strong">프론트엔드 </strong>개발자, 남소이입니다🙂
+          <strong class="home__title--strong">신입 프론트엔드 </strong>개발자, 남소이입니다🙂
         </h2>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section english">
-      <div class="section_left">
-        <h2 class="title">About me</h2>
-        <p class="description">
-          With sensitive observational skills,<br />
-          capturing the needs of users to provide a better experience
-        </p>
-      </div>
-      <ul class="majors english">
-        <li class="major">
-          <i class="fa-brands fa-html5 major__icon"></i>
-          <p class="major__title">Front-end</p>
-          <p>HTML, CSS, JavaScript,<br />React, Vue, Web APIs</p>
-        </li>
-        <li class="major">
-          <i class="fa-solid fa-server major__icon"></i>
-          <p class="major__title">Back-end</p>
-          <p>Firebase</p>
-        </li>
-        <li class="major">
-          <i class="fa-solid fa-comments major__icon"></i>
-          <p class="major__title">Communication</p>
-          <p>Jira, Figma, Notion</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section english">
-      <div class="section_left">
-        <h2 class="title">My Skills</h2>
-      </div>
-      <div class="skills">
-        <section class="skills__coding">
-          <h3 class="skills__title">Coding Skills</h3>
-          <ul>
-            <li class="bar">
-              <div class="bar__metadata">
-                <span>HTML</span><span>90%</span>
-              </div>
-              <div class="bar__bg">
-                <div class="bar__value" style="width: 90%"></div>
-              </div>
-            </li>
-            <li class="bar">
-              <div class="bar__metadata">
-                <span>CSS</span><span>90%</span>
-              </div>
-              <div class="bar__bg">
-                <div class="bar__value" style="width: 90%"></div>
-              </div>
-            </li>
-            <li class="bar">
-              <div class="bar__metadata">
-                <span>React</span><span>75%</span>
-              </div>
-              <div class="bar__bg">
-                <div class="bar__value" style="width: 75%"></div>
-              </div>
-            </li>
-            <li class="bar">
-              <div class="bar__metadata">
-                <span>Vue.JS</span><span>70%</span>
-              </div>
-              <div class="bar__bg">
-                <div class="bar__value" style="width: 70%"></div>
-              </div>
-            </li>
-            <li class="bar">
-              <div class="bar__metadata">
-                <span>JavaScript</span><span>60%</span>
-              </div>
-              <div class="bar__bg">
-                <div class="bar__value" style="width: 60%"></div>
-              </div>
-            </li>
-            <li class="bar">
-              <div class="bar__metadata">
-                <span>TypeScript</span><span>50%</span>
-              </div>
-              <div class="bar__bg">
-                <div class="bar__value" style="width: 50%"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="skills__tools">
-          <h3 class="skills__title">Tools</h3>
-          <ul>
-            <li>Visual Studio Code</li>
-            <li>WebStorm</li>
-          </ul>
-        </section>
-        <section class="skills__etc">
-          <h3 class="skills__title">Etc</h3>
-          <ul>
-            <li>Git</li>
-          </ul>
-        </section>
       </div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section english">
       <div class="section_left">
-        <h2 class="title">My work</h2>
-        <p class="description">Some of my recent works</p>
+        <h2 class="title">ARCHIVE</h2>
         <ul class="categories">
           <li>
             <button class="category category--selected" data-category="all">
@@ -197,21 +94,64 @@
         </ul>
       </div>
       <ul class="projects">
+
         <li class="project" data-type="Vue">
           <div class="projects__config">
             <img src="images/ico/VUE.png" alt="" />
             <img src=" images/ico/FIREBASE.png" alt="" />
           </div>
           <p class="projects__config_responsive">Responsive</p>
-          <a href="https://rotten-tomatoes-ad800.web.app/" target="_blank">
+          <a href="#ex1" rel="modal:open">
             <img src="images/projects/proj_01.png" alt="project" class="project__img" />
             <div class="project__metadata">
               <h3 class="project__title">Project #1</h3>
               <p>필름플라이트(FlimFlight)</p>
-              <!-- <a href="https://soyinam.github.io/PDF_Filmflight/기획서.pdf" target="_blank" class="develop_doc">기획서</a> -->
             </div>
           </a>
         </li>
+
+        <div id="ex1" class="modal">
+          <h3>필름플라이트</h3>
+
+          <a href="https://soyinam.github.io/PDF_Filmflight/기획서.pdf" target="_blank" rel="" class="
+          develop_doc">기획서</a>
+          <a href="https://rotten-tomatoes-ad800.web.app/" target="_blank" class="
+          develop_doc">프로젝트 링크</a>
+          <p>
+            <strong>프로젝트 소개</strong>
+            <br />영화 커뮤니티 사이트 입니다. <br />보고싶은 영화 리스트를 저장하거나, 이미 보고 온 영화에 대한 리뷰를 작성할 수 있습니다.
+          </p>
+          <p>
+            <strong>프로젝트 기간</strong>
+            <br />2024.12~2024.01
+          </p>
+          <p>
+            <strong>테스트 계정</strong>
+            <br />ID: test@t.com<br />
+            PW: 1111111111
+          </p>
+          <div>
+            <strong>주요 기능</strong>
+            <ul>
+              <li>
+                <p>보고싶은 영화 저장</p>
+                <video src="./images/videos/기능1.mov" autoplay loop />
+              </li>
+              <li>
+                <p>영화 리뷰 작성하기</p>
+                <video src="./images/videos/기능2.mov" autoplay loop />
+              </li>
+              <li>
+                <p>왓치리스트 관리</p>
+                <video src="./images/videos/기능3.mov" autoplay loop />
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+
         <li class="project" data-type="React">
           <div class="projects__config">
             <img src="images/ico/React.png" alt="" />
@@ -325,31 +265,6 @@
       </ul>
     </section>
 
-    <!-- Experience -->
-    <section id="testimonial" class="section english">
-      <div class="section_left">
-        <h2 class="title">Experience</h2>
-        <p class="description">where i've worked</p>
-      </div>
-      <ul class="testimonials">
-        <li class="testimonial">
-          <img src="images/experience/01.png" alt="experience01" class="testimonial__img" />
-          <div class="testimonial__bubble">
-            <p>다양한 콘텐츠 제작, 외부 제작자 모집 및 관리, 제작자 스튜디오 교육 실행, 콘텐츠 제작 및 기획</p>
-            <p><span class="testimonial__bubble__name">content PM</span>/ thingsflow</p>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img src="images/experience/02.webp" alt="experience02" class="testimonial__img" />
-          <div class="testimonial__bubble">
-            <p>리스크 재발 방지를 위한 파트너향 콘텐츠 기획, 신규 프로세스 및 시스템 시행 시 파트너향 가이드 기획, 내부 기준에 맞게 제품 광고할 수 있도록 파트너향 가이드 기획, 서비스 상시
-              모니터링를 통한 리스크 식별 후 조처, 잠재 리스크 예방을 위한 신규 프로세스 및 시스템 기획, 신고 서비스 운영 및 기능 개선 활동, 파트너 스튜디오 기능 개선 TF</p>
-            <p><span class="testimonial__bubble__name">Risk Manager</span>/ wadiz</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
     <!-- Arrow up -->
     <aside>
       <a class="arrow-up" href="#home" title="back to top">
@@ -361,13 +276,18 @@
   <!-- Footer -->
   <footer id="contact" class="section english">
     <div class="max-container">
-      <h2 class="title">Contact</h2>
-      <p class="description">frontsoyi@gmail.com</p>
-      <div class="contact__links">
-        <img src="./images/ico/Velog.png" alt="'" class="contact__link" />
-      </div>
+      &#169; NAM SOYI
     </div>
   </footer>
 </body>
+
+<script>
+  function show() {
+    $("#ex1").modal({
+      fadeDuration: 1000,
+      fadeDelay: 0.5,
+    });
+  }
+</script>
 
 </html>

@@ -293,7 +293,7 @@
   display: inline-block;
 }
 
-.projects__config > img {
+.projects__config>img {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -505,4 +505,85 @@ contact__img @media screen and (max-width: 768px) {
     bottom: 1.5rem;
     right: 1.5rem;
   }
+}
+
+.modal a.close-modal[class*="icon-"] {
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  background: #900;
+  border: 2px solid #fff;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.modal>a {
+  display: inline-block;
+  width: 120px;
+  padding: 0.5rem 0.7rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  max-width: 55% !important
+}
+
+.modal>h3 {
+  padding: 2rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+.modal p {
+  padding: 1rem 0;
+}
+
+.modal p strong,
+.modal div strong {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.modal a.close-modal {
+  background: transparent
+}
+
+.modal div {
+  padding: 1rem 0;
+
+}
+
+.modal div ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal div ul li {
+  max-width: 50%;
+}
+
+.modal div video {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: fill;
+
 }
