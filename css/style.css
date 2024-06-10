@@ -298,7 +298,7 @@
   display: inline-block;
 }
 
-.projects__config>img {
+.projects__config > img {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -533,7 +533,7 @@ contact__img @media screen and (max-width: 768px) {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.modal>a {
+.modal > a {
   display: inline-block;
   width: 120px;
   padding: 0.5rem 0.7rem;
@@ -552,12 +552,12 @@ contact__img @media screen and (max-width: 768px) {
   max-width: 55% !important;
 }
 
-.modal>h3 {
+.modal > h3 {
   padding: 2rem 0 1rem;
   font-size: 1.5rem;
 }
 
-.modal>p {
+.modal > p {
   padding: 1rem 0;
 }
 
@@ -582,7 +582,6 @@ contact__img @media screen and (max-width: 768px) {
   gap: 1rem;
 }
 
-
 .modal div ul li {
   max-width: 100%;
 }
@@ -593,4 +592,5 @@ contact__img @media screen and (max-width: 768px) {
   min-height: 300px;
   object-fit: cover;
   object-position: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
